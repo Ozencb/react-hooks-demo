@@ -4,7 +4,7 @@ This project aims to simply demonstrate the new hooks feature of React, which is
 
 import React, { useState, useEffect } from "react"; // You have to import hook methods in order to use them
 import { useFetch } from "./components/fetchHook"; 
-import { Icon, Descriptions } from "antd";
+import { Icon } from "antd";
 import Profiles from "./components/profiles"; // Components can be import like this
 import Repos from "./components/repos";
 import "./styles.less";
