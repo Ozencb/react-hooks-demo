@@ -1,4 +1,4 @@
-# A Useless React project✨
+# A Useless React Project✨
 This project is created mainly to understand and demonstrate how React hooks work; it has no real use.
 Target audience is people that are new to React but has some web development experience, so advanced React developers will probably find this boring.
 I tried to explain what is going on by adding lots of comments, hopefully it helps.
