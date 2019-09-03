@@ -14,11 +14,4 @@ $ npm install
 $ npm run start
 ```
 
-or:
-
-```bash
-$ yarn
-$ yarn start
-```
-
 By default, the app will launch at [http://localhost:3000](http://localhost:3000).
