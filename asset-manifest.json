@@ -1,15 +1,26 @@
 {
-  "main.css": "/react-hooks-demo/static/css/main.fcbb5ad1.chunk.css",
-  "main.js": "/react-hooks-demo/static/js/main.358b1ec6.chunk.js",
-  "main.js.map": "/react-hooks-demo/static/js/main.358b1ec6.chunk.js.map",
-  "runtime~main.js": "/react-hooks-demo/static/js/runtime~main.90e0d1b3.js",
-  "runtime~main.js.map": "/react-hooks-demo/static/js/runtime~main.90e0d1b3.js.map",
-  "static/css/2.5e17ddec.chunk.css": "/react-hooks-demo/static/css/2.5e17ddec.chunk.css",
-  "static/js/2.40ce32bd.chunk.js": "/react-hooks-demo/static/js/2.40ce32bd.chunk.js",
-  "static/js/2.40ce32bd.chunk.js.map": "/react-hooks-demo/static/js/2.40ce32bd.chunk.js.map",
-  "index.html": "/react-hooks-demo/index.html",
-  "precache-manifest.cd2ea4f223783f31f13daa73b32ebd45.js": "/react-hooks-demo/precache-manifest.cd2ea4f223783f31f13daa73b32ebd45.js",
-  "service-worker.js": "/react-hooks-demo/service-worker.js",
-  "static/css/2.5e17ddec.chunk.css.map": "/react-hooks-demo/static/css/2.5e17ddec.chunk.css.map",
-  "static/css/main.fcbb5ad1.chunk.css.map": "/react-hooks-demo/static/css/main.fcbb5ad1.chunk.css.map"
+  "files": {
+    "main.css": "/react-hooks-demo/static/css/main.5d05f7b6.chunk.css",
+    "main.js": "/react-hooks-demo/static/js/main.f9290978.chunk.js",
+    "main.js.map": "/react-hooks-demo/static/js/main.f9290978.chunk.js.map",
+    "runtime-main.js": "/react-hooks-demo/static/js/runtime-main.40b912fd.js",
+    "runtime-main.js.map": "/react-hooks-demo/static/js/runtime-main.40b912fd.js.map",
+    "static/css/2.e2a7e3cd.chunk.css": "/react-hooks-demo/static/css/2.e2a7e3cd.chunk.css",
+    "static/js/2.0b01350c.chunk.js": "/react-hooks-demo/static/js/2.0b01350c.chunk.js",
+    "static/js/2.0b01350c.chunk.js.map": "/react-hooks-demo/static/js/2.0b01350c.chunk.js.map",
+    "index.html": "/react-hooks-demo/index.html",
+    "precache-manifest.4b1de08f66fb354d95f07176dd9dded3.js": "/react-hooks-demo/precache-manifest.4b1de08f66fb354d95f07176dd9dded3.js",
+    "service-worker.js": "/react-hooks-demo/service-worker.js",
+    "static/css/2.e2a7e3cd.chunk.css.map": "/react-hooks-demo/static/css/2.e2a7e3cd.chunk.css.map",
+    "static/css/main.5d05f7b6.chunk.css.map": "/react-hooks-demo/static/css/main.5d05f7b6.chunk.css.map",
+    "static/js/2.0b01350c.chunk.js.LICENSE": "/react-hooks-demo/static/js/2.0b01350c.chunk.js.LICENSE",
+    "static/media/font-awesome.min.css": "/react-hooks-demo/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40b912fd.js",
+    "static/css/2.e2a7e3cd.chunk.css",
+    "static/js/2.0b01350c.chunk.js",
+    "static/css/main.5d05f7b6.chunk.css",
+    "static/js/main.f9290978.chunk.js"
+  ]
 }
