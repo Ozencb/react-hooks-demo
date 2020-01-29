@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/react-hooks-demo/static/css/main.5d05f7b6.chunk.css",
-    "main.js": "/react-hooks-demo/static/js/main.f9290978.chunk.js",
-    "main.js.map": "/react-hooks-demo/static/js/main.f9290978.chunk.js.map",
+    "main.css": "/react-hooks-demo/static/css/main.7b6cd1a3.chunk.css",
+    "main.js": "/react-hooks-demo/static/js/main.94b94554.chunk.js",
+    "main.js.map": "/react-hooks-demo/static/js/main.94b94554.chunk.js.map",
     "runtime-main.js": "/react-hooks-demo/static/js/runtime-main.40b912fd.js",
     "runtime-main.js.map": "/react-hooks-demo/static/js/runtime-main.40b912fd.js.map",
     "static/css/2.e2a7e3cd.chunk.css": "/react-hooks-demo/static/css/2.e2a7e3cd.chunk.css",
-    "static/js/2.0b01350c.chunk.js": "/react-hooks-demo/static/js/2.0b01350c.chunk.js",
-    "static/js/2.0b01350c.chunk.js.map": "/react-hooks-demo/static/js/2.0b01350c.chunk.js.map",
+    "static/js/2.ac47a94e.chunk.js": "/react-hooks-demo/static/js/2.ac47a94e.chunk.js",
+    "static/js/2.ac47a94e.chunk.js.map": "/react-hooks-demo/static/js/2.ac47a94e.chunk.js.map",
     "index.html": "/react-hooks-demo/index.html",
-    "precache-manifest.4b1de08f66fb354d95f07176dd9dded3.js": "/react-hooks-demo/precache-manifest.4b1de08f66fb354d95f07176dd9dded3.js",
+    "precache-manifest.f23d0845f7f6a25f8ab02ba5503d92bf.js": "/react-hooks-demo/precache-manifest.f23d0845f7f6a25f8ab02ba5503d92bf.js",
     "service-worker.js": "/react-hooks-demo/service-worker.js",
     "static/css/2.e2a7e3cd.chunk.css.map": "/react-hooks-demo/static/css/2.e2a7e3cd.chunk.css.map",
-    "static/css/main.5d05f7b6.chunk.css.map": "/react-hooks-demo/static/css/main.5d05f7b6.chunk.css.map",
-    "static/js/2.0b01350c.chunk.js.LICENSE": "/react-hooks-demo/static/js/2.0b01350c.chunk.js.LICENSE",
+    "static/css/main.7b6cd1a3.chunk.css.map": "/react-hooks-demo/static/css/main.7b6cd1a3.chunk.css.map",
+    "static/js/2.ac47a94e.chunk.js.LICENSE": "/react-hooks-demo/static/js/2.ac47a94e.chunk.js.LICENSE",
     "static/media/font-awesome.min.css": "/react-hooks-demo/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.40b912fd.js",
     "static/css/2.e2a7e3cd.chunk.css",
-    "static/js/2.0b01350c.chunk.js",
-    "static/css/main.5d05f7b6.chunk.css",
-    "static/js/main.f9290978.chunk.js"
+    "static/js/2.ac47a94e.chunk.js",
+    "static/css/main.7b6cd1a3.chunk.css",
+    "static/js/main.94b94554.chunk.js"
   ]
 }
