@@ -1,0 +1,29 @@
+.button {
+    margin: auto;
+    width: 10%;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 30rem;
+    height: 40rem;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.content {
+    width: 80%;
+    max-width: 90%;
+}

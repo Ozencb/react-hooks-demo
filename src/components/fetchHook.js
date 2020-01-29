@@ -11,8 +11,11 @@ function useFetch(url) {
   async function fetchUrl() {
     const response = await fetch(url);
     const json = await response.json();
-    setData(JSON.parse(JSON.stringify(json)));
-    setLoading(false);
+    let returned_data = JSON.parse(JSON.stringify(json));
+    if (!('message' in returned_data)){ // Check if API rate limit exceeded. Keeps at loading state if limit exceeded for your IP
+      setData(returned_data);
+      setLoading(false);
+    }
   }
 
   useEffect(() => {
