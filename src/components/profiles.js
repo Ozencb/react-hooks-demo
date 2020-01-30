@@ -15,6 +15,7 @@ import "../styles/Profile.css";
 */
 
 function Profiles(props) {
+  console.log("Jumped to count: " + props.count )
   return (
     <div className="profiles">
       <img
@@ -23,7 +24,7 @@ function Profiles(props) {
         alt=""
       />
       <div className="username">
-        <a href={props.users[props.count].url}>
+        <a href={props.users[props.count].html_url}>
             {props.users[props.count].login.replace(/\w\S*/g, function(txt) {
               return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
               })

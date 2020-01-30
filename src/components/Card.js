@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import useKey from 'use-key-hook';
 import { useFetch } from './FetchHook';
 import Profiles from './Profiles'; // Components can be import like this
 import Repos from './Repos';
@@ -19,28 +20,28 @@ function Card(){
     // The initial state is only used during the first render, which can be set to another state by calling "setCount"
     // A state can be any variable; a string, an integer, an object.
 
-    
     const [users, loading] = useFetch("https://api.github.com/users");
     // useFetch is a custom hook method that takes a URL as an argument and returns data from URL and loading state.
     // Its details can be found in "components/fetchHook.js".
 
-    useEffect(() => {
-        if (count === -1) {
-            setCount(0);
-        }
-    }, [count]);
+    let userCount = loading ? 0 : Number(JSON.parse(JSON.stringify(users)).length);
 
-    function counter(direction) { // This method is used to navigate through "users" object and takes arguments that's been sent from navigation buttons
-        if (direction === "next") {
-        setCount((count + 1) % JSON.parse(JSON.stringify(users)).length);
-        } else if (direction === "previous") {
-        if (count === 0) {
-            setCount(count + JSON.parse(JSON.stringify(users)).length - 1);
-        } else {
-            setCount(count - 1);
-            }
-        }
+    const navigateNext = () => {
+        setCount(count => count === userCount - 1 ? 0 : count + 1);
     }
+
+    const navigateBack = () => {
+        setCount(count => count === 0 ? userCount - 1 : count - 1);
+    }
+
+    useKey((pressedKey) => {
+        if (pressedKey === 39) {
+            navigateNext();
+        } else if (pressedKey === 37) {
+            navigateBack();
+        }
+        
+    }, {detectKeys: [39, 37]});
 
     /*
     This is where our main App function returns JSX a template that injects itself into root.
@@ -73,12 +74,12 @@ function Card(){
         </div> 
         ) : (
         <div className="card animate-bottom">
-            <FontAwesomeIcon className="left-arrow button" icon={faAngleLeft} size="3x" onClick={() => counter("next")} />{" "}
+            <FontAwesomeIcon className="left-arrow button" icon={faAngleLeft} size="3x" onClick={navigateBack} />{" "}
             <div className="content">
                 <Profiles users={users} count={count} />
                 <Repos users={users} count={count} />
             </div>
-            <FontAwesomeIcon className="right-arrow button" icon={faAngleRight} size="3x" onClick={() => counter("previous")} />{" "}
+            <FontAwesomeIcon className="right-arrow button" icon={faAngleRight} size="3x" onClick={navigateNext} />{" "}
         </div>
     );
 }
