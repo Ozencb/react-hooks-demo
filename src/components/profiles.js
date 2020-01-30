@@ -15,7 +15,7 @@ import "../styles/Profile.css";
 */
 
 function Profiles(props) {
-  console.log("Jumped to count: " + props.count )
+  console.log("Jumped to profile number: " + props.count )
   return (
     <div className="profiles">
       <img

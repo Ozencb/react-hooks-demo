@@ -34,14 +34,15 @@ function Card(){
         setCount(count => count === 0 ? userCount - 1 : count - 1);
     }
 
-    useKey((pressedKey) => {
+    useKey((pressedKey) => { // Keypress effect hook. Triggered with left/right keypress
         if (pressedKey === 39) {
             navigateNext();
         } else if (pressedKey === 37) {
             navigateBack();
         }
         
-    }, {detectKeys: [39, 37]});
+    }, {detectKeys: [39, 37]},
+    {dependencies: [userCount]});
 
     /*
     This is where our main App function returns JSX a template that injects itself into root.
@@ -74,12 +75,12 @@ function Card(){
         </div> 
         ) : (
         <div className="card animate-bottom">
-            <FontAwesomeIcon className="left-arrow button" icon={faAngleLeft} size="3x" onClick={navigateBack} />{" "}
+            <FontAwesomeIcon className="left-arrow button" icon={faAngleLeft} size="3x" onClick={() => navigateBack()} />{" "}
             <div className="content">
                 <Profiles users={users} count={count} />
                 <Repos users={users} count={count} />
             </div>
-            <FontAwesomeIcon className="right-arrow button" icon={faAngleRight} size="3x" onClick={navigateNext} />{" "}
+            <FontAwesomeIcon className="right-arrow button" icon={faAngleRight} size="3x" onClick={() => navigateNext()} />{" "}
         </div>
     );
 }
