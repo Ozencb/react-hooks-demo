@@ -1,7 +1,9 @@
 /*
-This project aims to simply demonstrate the new hooks feature of React, which is used to store state in functional components.
+This project aims to simply demonstrate the new hooks feature of React,
+which is used to store state in functional components.
 */
 
+// Packages
 import React from 'react';
 
 // Components
